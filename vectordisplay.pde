@@ -5,6 +5,12 @@ void setup(){
 }
 
 void draw(){
+  //lines
+  stroke(1);
+  for(int i=0; i<500; i+=10){
+    line(i,0,i,500);
+    line(0,i,500,i);
+  }
   float x=250;
   float y=50;
   circle(x,y,5);
@@ -22,6 +28,7 @@ void draw(){
   circle(x,y,2);
   y-=5.407797402  ;x+=-16.64348904;
   circle(x,y,2);
+  stroke(5);
   line(250,50,x,y);
   println("xdist: "+(x-250)+" ydist: "+(y-50));
   println("dist: "+sqrt(pow(x-250,2)+pow(y-50,2)));
