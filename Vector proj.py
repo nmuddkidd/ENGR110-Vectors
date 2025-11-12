@@ -1,20 +1,31 @@
 import math
 def conversion():
     print("Conversion")
-    deg = int(input("Input degrees: ")) + int(input("Input minutes: "))/60 + int(input("Input seconds: "))/3600
+    deg = int(input("Input degrees: ")) + int(input("Input minutes: "))/60 + float(input("Input seconds: "))/3600
     print(deg,"are the decimal degreess.")
     input("press enter to return to menu")
 
 def radconversion():
     return (int(input("Input degrees: ")) + int(input("Input minutes: "))/60.0 + float(input("Input seconds: "))/3600.0) * math.pi/180;
 
+def con():
+    deg = int(input("Input degrees: ")) + int(input("Input minutes: "))/60 + float(input("Input seconds: "))/3600
+    print("Converting.")
+    return deg
+
 def distancecalc():
-   ## print("Distance Calculation")
-   ## x = int(input("Input x value in meters: "))
-   ## y = int(input("Input y value in meters: "))
-   ## dis = math.sqrt((x*x)+(y*y))
-   ## print("The resultant vector is", dis, "meters.")
-   ## input("press enter to return to menu") 
+   print("Distance Calculation")
+   print ("Input first latitude.")
+   lat1 = 111100 * con()
+   print ("Input first longitude.")
+   long1 = 111100 * con()
+   print ("Input second latitude.")
+   lat2 = 111100 * con()
+   print ("Input second longitude.")
+   long2 = 111100 * con()
+   dis = math.sqrt((math.pow((lat1-lat2), 2)+math.pow((long1-long2),2)))
+   print(f"The resultant vector is {dis:.2f} meters.")
+   input("press enter to return to menu") 
 
 def haversinecalc():
     print("Haversine Calculation")
