@@ -1,27 +1,32 @@
+import math
 def conversion():
-    print("conversion")
-    deg = int(input("input degrees: ")) + int(input("input minutes: "))/60 + int(input("input seconds: "))/3600
-    print(deg,"are the decimal degrees")
+    print("Conversion")
+    deg = int(input("Input degrees: ")) + int(input("Input minutes: "))/60 + int(input("Input seconds: "))/3600
+    print(deg,"are the decimal degreess.")
     input("press enter to return to menu")
 
 def directconversion(degrees, minutes, seconds):
     return degrees+minutes/60+seconds/3600;
 
 def distancecalc():
-    print("distance calc")
+    print("Distance Calculation")
+    x = int(input("Input x value in meters: "))
+    y = int(input("Input y value in meters: "))
+    dis = math.sqrt((x*x)+(y*y))
+    print("The resultant vector is", dis, "meters.")
     input("press enter to return to menu")
 
 def haversinecalc():
-    print("haversine calc")
+    print("Haversine Calculation")
     input("press enter to return to menu")
 
 choice = -1;
 while choice != 0:
     print("MENU:")
     print("0) exit")
-    print("1) Geographic coordinate conversion")
-    print("2) Resultant vector calculation (distance)")
-    print("3) Resultant vector calculation (haversine)")
+    print("1) Geographic Coordinate Conversion")
+    print("2) Resultant vector calculation (Distance)")
+    print("3) Resultant vector calculation (Haversine)")
     choice = int(input())
     match choice:
         case 1:
