@@ -6,7 +6,7 @@ def conversion():
 
 def directconversion(degrees, minutes, seconds):
     return degrees+minutes/60+seconds/3600;
-1
+
 def distancecalc():
     print("distance calc")
     input("press enter to return to menu")
