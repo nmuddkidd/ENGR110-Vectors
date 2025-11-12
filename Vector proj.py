@@ -2,7 +2,7 @@ import math
 def conversion():
     print("Conversion")
     deg = int(input("Input degrees: ")) + int(input("Input minutes: "))/60 + float(input("Input seconds: "))/3600
-    print(deg,"are the decimal degreess.")
+    print(f"{deg:.4f} are the decimal degreess.")
     input("press enter to return to menu")
 
 def radconversion():
