@@ -9,12 +9,12 @@ def radconversion():
     return (int(input("Input degrees: ")) + int(input("Input minutes: "))/60.0 + float(input("Input seconds: "))/3600.0) * math.pi/180;
 
 def distancecalc():
-    print("Distance Calculation")
-    x = int(input("Input x value in meters: "))
-    y = int(input("Input y value in meters: "))
-    dis = math.sqrt((x*x)+(y*y))
-    print("The resultant vector is", dis, "meters.")
-    input("press enter to return to menu")
+   ## print("Distance Calculation")
+   ## x = int(input("Input x value in meters: "))
+   ## y = int(input("Input y value in meters: "))
+   ## dis = math.sqrt((x*x)+(y*y))
+   ## print("The resultant vector is", dis, "meters.")
+   ## input("press enter to return to menu") 
 
 def haversinecalc():
     print("Haversine Calculation")
