@@ -23,8 +23,12 @@ def distancecalc():
    lat2 = (40000000/360) * con()
    print ("Input second longitude.")
    long2 = (40000000/360) * con()
+   x = lat2-lat1
+   y = long2-long1
+   heading = ((math.atan2(y,x))*180/math.pi)+360
    dis = math.sqrt((math.pow((lat1-lat2), 2)+math.pow((long1-long2),2)))
-   print(f"The resultant vector is {dis:.2f} meters.")
+   print(f"The resultant vector is {dis:.2f} meters with the heading {heading:.1f} degrees from north.")
+   print(f"The vector is {x:.2f}i + {y:.2f}j")
    input("press enter to return to menu") 
 
 def haversinecalc():
