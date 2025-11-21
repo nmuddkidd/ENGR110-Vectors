@@ -32,7 +32,7 @@ def distancecalc():
         heading = (heading - 270) * -1
    dis = math.sqrt((math.pow((lat1-lat2), 2)+math.pow((long2-long1),2)))
    print(f"The resultant vector is {dis:.2f} meters with the heading {heading:.1f} degrees from north.")
-   print(f"The vector is {y:.2f}i + {x:.2f}j")
+   print(f"The vector is {y:.2f}i + {x:.2f}j meters")
    input("press enter to return to menu") 
 
 def haversinecalc():
